@@ -107,6 +107,21 @@
       "expected": false
     },
     {
+      "uuid": "25c9ae19-cfd3-42bd-a7df-c02e512ac82a",
+      "description": "dominoes can only be used either reversed or unreversed",
+      "comments": [
+        "Solutions might just check if any of the numbers of two dominoes match",
+        "and still handle the special case of only one domino being present.",
+        "This is caught by this test since no matter if a domino is reversed or not,",
+        "they are not chainable."
+      ],
+      "property": "canChain",
+      "input": {
+        "dominoes": [[1, 2], [3, 2]]
+      },
+      "expected": false
+    },
+    {
       "uuid": "0da0c7fe-d492-445d-b9ef-1f111f07a301",
       "description": "disconnected - double loop",
       "property": "canChain",
